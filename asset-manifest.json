@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/instagram-clone/static/css/main.3a6a05ae.css",
+    "main.js": "/instagram-clone/static/js/main.11b85fef.js",
+    "static/media/asan.png": "/instagram-clone/static/media/asan.b8cab75fd727b2715fd2.png",
+    "static/media/kutman.png": "/instagram-clone/static/media/kutman.bf6e811da926cabecaf7.png",
+    "static/media/azimitto.png": "/instagram-clone/static/media/azimitto.017f1e49f4de103af178.png",
+    "static/media/kyial.png": "/instagram-clone/static/media/kyial.98e44bd652cc3e7c0c66.png",
+    "static/media/ayana.jpg": "/instagram-clone/static/media/ayana.a67d3095f36608659013.jpg",
+    "static/media/kersan.png": "/instagram-clone/static/media/kersan.911a323a1c64aab5b8c0.png",
+    "static/media/erbol.png": "/instagram-clone/static/media/erbol.f971fada516fcd1224db.png",
+    "static/media/tunuk.png": "/instagram-clone/static/media/tunuk.1fa952b9a2629c26185e.png",
+    "static/media/argen.png": "/instagram-clone/static/media/argen.3483dd490ae0d6597df0.png",
+    "static/media/adil.png": "/instagram-clone/static/media/adil.6addcec1fa41da95f18c.png",
+    "static/media/ayelita.jpg": "/instagram-clone/static/media/ayelita.d826a0820a19a0ddd507.jpg",
+    "static/media/altynai.jpg": "/instagram-clone/static/media/altynai.3e6b430f5b6f3128c73d.jpg",
+    "static/media/nuremir.png": "/instagram-clone/static/media/nuremir.532ccf1520aa48e5c579.png",
+    "static/media/aktilek.jpg": "/instagram-clone/static/media/aktilek.271920777fc70d2aebc7.jpg",
+    "static/media/inst.otf": "/instagram-clone/static/media/inst.7d105274034af3bc93e2.otf",
+    "static/media/anon.webp": "/instagram-clone/static/media/anon.197ee2f6546c142c9ba5.webp",
+    "index.html": "/instagram-clone/index.html",
+    "main.3a6a05ae.css.map": "/instagram-clone/static/css/main.3a6a05ae.css.map",
+    "main.11b85fef.js.map": "/instagram-clone/static/js/main.11b85fef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a6a05ae.css",
+    "static/js/main.11b85fef.js"
+  ]
+}
