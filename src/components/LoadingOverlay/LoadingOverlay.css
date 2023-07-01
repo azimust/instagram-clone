@@ -1,0 +1,25 @@
+.auth__loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.auth__loader svg {
+    color: rgb(91, 91, 91);
+    animation: spinner 3s linear infinite;
+}

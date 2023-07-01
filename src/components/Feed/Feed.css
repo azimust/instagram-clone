@@ -1,0 +1,21 @@
+.feed__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed__content {
+    max-width: 700px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.posts {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
