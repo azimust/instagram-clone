@@ -9,7 +9,7 @@ import ayana from '../../assets/users/ayana.jpg'
 import ayelita from '../../assets/users/ayelita.jpg'
 import altynai from '../../assets/users/altynai.jpg'
 import anon from '../../assets/users/anon.webp'
-import { GlobalContext } from '../../state/context/GlobalContext' 
+import { GlobalContext } from '../../state/context/GlobalContext'
 
 const USERS = [
   {
@@ -45,7 +45,7 @@ const Rightbar = () => {
     window.location.reload()
   }
 
-  const {user} = useContext(GlobalContext)
+  const { user } = useContext(GlobalContext)
 
   return (
     <div className='rightbar'>

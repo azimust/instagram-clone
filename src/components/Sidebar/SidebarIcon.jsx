@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import { GlobalDispatchContext } from '../../state/context/GlobalContext'
+import { Link } from 'react-router-dom'
 
-const SidebarIcon = ({ name, icon }) => {
+const SidebarIcon = ({ name, icon, url }) => {
     const dispatch = useContext(GlobalDispatchContext)
 
     const handleClickIcon = () => {
@@ -15,10 +16,10 @@ const SidebarIcon = ({ name, icon }) => {
     }
 
     return (
-        <li onClick={handleClickIcon} className='bar__item'>
+        <Link to={url} onClick={handleClickIcon} className='bar__item'>
             <span className='bar__icon'>{icon}</span>
             <span className='bar__name'>{name}</span>
-        </li>
+        </Link>
     )
 }
 

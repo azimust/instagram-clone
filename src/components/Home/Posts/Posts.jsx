@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Posts.css'
-import anon from '../../assets/users/anon.webp'
+import anon from '../../../assets/users/anon.webp'
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
 import { TbMessageCircle2 } from 'react-icons/tb'
 import { HiOutlinePaperAirplane } from 'react-icons/hi'

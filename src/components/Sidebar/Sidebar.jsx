@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Sidebar.css'
 import { GoHome, GoHomeFill } from 'react-icons/go'
 import { FiSearch } from 'react-icons/fi'
@@ -11,52 +11,56 @@ import { BiUserCircle, BiDoorOpen } from 'react-icons/bi'
 import SidebarIcon from './SidebarIcon'
 import { auth } from '../../lib/firebase'
 import { signOut } from 'firebase/auth'
+import { GlobalContext } from '../../state/context/GlobalContext'
 
-const SIDEBAR_ITEMS = [
-    {
-        icon: <GoHomeFill />,
-        url: '/',
-        name: 'Главная'
-    },
-    {
-        icon: <FiSearch />,
-        url: '/',
-        name: 'Поисковый запрос'
-    },
-    {
-        icon: <FaRegCompass />,
-        url: '/',
-        name: 'Интересное'
-    },
-    {
-        icon: <MdOutlineVideoLibrary />,
-        url: '/',
-        name: 'Reels'
-    },
-    {
-        icon: <LiaFacebookMessenger />,
-        url: '/',
-        name: 'Сообщение'
-    },
-    {
-        icon: <AiOutlineHeart />,
-        url: '/',
-        name: 'Уведомление'
-    },
-    {
-        icon: <BsPlusSquare />,
-        url: '/',
-        name: 'Создать'
-    },
-    {
-        icon: <BiUserCircle />,
-        url: '/',
-        name: 'Профиль'
-    }
-]
+
 
 const Sidebar = () => {
+    const { user } = useContext(GlobalContext)
     const [isMobile, setIsMobile] = useState(false);
+
+    const SIDEBAR_ITEMS = [
+        {
+            icon: <GoHomeFill />,
+            url: '/instagram-clone/',
+            name: 'Главная'
+        },
+        {
+            icon: <FiSearch />,
+            url: '/instagram-clone/',
+            name: 'Поисковый запрос'
+        },
+        {
+            icon: <FaRegCompass />,
+            url: '/instagram-clone/',
+            name: 'Интересное'
+        },
+        {
+            icon: <MdOutlineVideoLibrary />,
+            url: '/instagram-clone/',
+            name: 'Reels'
+        },
+        {
+            icon: <LiaFacebookMessenger />,
+            url: '/instagram-clone/',
+            name: 'Сообщение'
+        },
+        {
+            icon: <AiOutlineHeart />,
+            url: '/instagram-clone/',
+            name: 'Уведомление'
+        },
+        {
+            icon: <BsPlusSquare />,
+            url: '/instagram-clone/',
+            name: 'Создать'
+        },
+        {
+            icon: <BiUserCircle />,
+            url: `/instagram-clone/${user.username}`,
+            name: 'Профиль'
+        }
+    ]
 
     useEffect(() => {
         const handleResize = () => {

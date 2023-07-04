@@ -1,14 +1,14 @@
 import React from 'react'
 import './Stories.css'
-import argen from '../../assets/users/argen.png'
-import erbol from '../../assets/users/erbol.png'
-import nuremir from '../../assets/users/nuremir.png'
-import azimitto from '../../assets/users/azimitto.png'
-import kersan from '../../assets/users/kersan.png'
-import tunuk from '../../assets/users/tunuk.png'
-import kyial from '../../assets/users/kyial.png'
-import adil from '../../assets/users/adil.png'
-import kutman from '../../assets/users/kutman.png'
+import argen from '../../../assets/users/argen.png'
+import erbol from '../../../assets/users/erbol.png'
+import nuremir from '../../../assets/users/nuremir.png'
+import azimitto from '../../../assets/users/azimitto.png'
+import kersan from '../../../assets/users/kersan.png'
+import tunuk from '../../../assets/users/tunuk.png'
+import kyial from '../../../assets/users/kyial.png'
+import adil from '../../../assets/users/adil.png'
+import kutman from '../../../assets/users/kutman.png'
 
 const STORIES_ITEMS = [
     {

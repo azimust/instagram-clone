@@ -40,7 +40,7 @@
     text-overflow: ellipsis;
 }
 
-.check div{
+.check div {
     box-shadow: 0px 0px 0px 2px rgb(255, 254, 254),
         0px 0px 0px 4px rgb(210, 210, 210);
     width: 50px;

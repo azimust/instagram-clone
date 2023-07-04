@@ -30,6 +30,7 @@
     align-items: center;
     gap: 10px;
     font-size: 20px;
+    color: black;
 }
 
 .bar__icon {
