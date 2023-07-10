@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { GlobalDispatchContext } from '../../state/context/GlobalContext'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
-const SidebarIcon = ({ name, icon, url }) => {
+const SidebarIcon = ({ name, icon, url, iconFill, id }) => {
     const dispatch = useContext(GlobalDispatchContext)
 
-    const handleClickIcon = () => {
+    const handleClickIcon = (id) => {
         if (name === 'Создать')
             dispatch({
                 type: 'SET_IS_UPLOAD_POST_MODAL_OPEN',
@@ -16,10 +16,10 @@ const SidebarIcon = ({ name, icon, url }) => {
     }
 
     return (
-        <Link to={url} onClick={handleClickIcon} className='bar__item'>
+        <NavLink to={url} onClick={handleClickIcon} className='bar__item'>
             <span className='bar__icon'>{icon}</span>
             <span className='bar__name'>{name}</span>
-        </Link>
+        </NavLink>
     )
 }
 

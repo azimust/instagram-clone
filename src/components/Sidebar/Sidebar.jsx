@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './Sidebar.css'
 import { GoHome, GoHomeFill } from 'react-icons/go'
+import { TfiSearch } from 'react-icons/tfi'
 import { FiSearch } from 'react-icons/fi'
-import { FaRegCompass } from 'react-icons/fa'
-import { MdOutlineVideoLibrary } from 'react-icons/md'
+import { FaCompass } from 'react-icons/fa'
+import { PiVideoLight, PiVideoFill } from 'react-icons/pi'
 import { LiaFacebookMessenger } from 'react-icons/lia'
-import { AiOutlineHeart } from 'react-icons/ai'
-import { BsPlusSquare, BsInstagram } from 'react-icons/bs'
-import { BiUserCircle, BiDoorOpen } from 'react-icons/bi'
+import { AiOutlineHeart, AiFillHeart, AiOutlineCompass } from 'react-icons/ai'
+import { BsPlusSquare, BsInstagram, BsPlusSquareFill } from 'react-icons/bs'
+import { BiUserCircle, BiDoorOpen, BiLogoMessenger, BiSolidUserCircle } from 'react-icons/bi'
 import SidebarIcon from './SidebarIcon'
 import { auth } from '../../lib/firebase'
 import { signOut } from 'firebase/auth'
@@ -21,44 +22,52 @@ const Sidebar = () => {
 
     const SIDEBAR_ITEMS = [
         {
-            icon: <GoHomeFill />,
+            id: 1,
+            icon: <GoHome />,
             url: '/instagram-clone/',
-            name: 'Главная'
+            name: 'Главная',
         },
         {
-            icon: <FiSearch />,
+            id: 2,
+            icon: <TfiSearch />,
             url: '/instagram-clone/',
-            name: 'Поисковый запрос'
+            name: 'Поисковый запрос',
         },
         {
-            icon: <FaRegCompass />,
+            id: 3,
+            icon: <AiOutlineCompass />,
             url: '/instagram-clone/',
-            name: 'Интересное'
+            name: 'Интересное',
         },
         {
-            icon: <MdOutlineVideoLibrary />,
+            id: 4,
+            icon: <PiVideoLight />,
             url: '/instagram-clone/',
-            name: 'Reels'
+            name: 'Reels',
         },
         {
+            id: 5,
             icon: <LiaFacebookMessenger />,
             url: '/instagram-clone/',
-            name: 'Сообщение'
+            name: 'Сообщение',
         },
         {
+            id: 6,
             icon: <AiOutlineHeart />,
             url: '/instagram-clone/',
-            name: 'Уведомление'
+            name: 'Уведомление',
         },
         {
+            id: 7,
             icon: <BsPlusSquare />,
             url: '/instagram-clone/',
-            name: 'Создать'
+            name: 'Создать',
         },
         {
+            id: 8,
             icon: <BiUserCircle />,
             url: `/instagram-clone/${user.username}`,
-            name: 'Профиль'
+            name: 'Профиль',
         }
     ]
 

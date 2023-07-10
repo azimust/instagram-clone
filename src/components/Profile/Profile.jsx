@@ -23,6 +23,8 @@ const Profile = () => {
     })
   }, [])
 
+  const publicCount = posts.filter((post) => post.username === user.username)
+
   return (
     <div className='profile'>
       <div className="container">
@@ -34,7 +36,7 @@ const Profile = () => {
                 {user.username}
               </h3>
               <div className="header-info__info">
-                <p><span>0</span> публикаций</p>
+                <p><span>{publicCount.length}</span> публикаций</p>
                 <p><span>0</span> подписчиков</p>
                 <p><span>0</span> подписок</p>
               </div>
@@ -51,12 +53,8 @@ const Profile = () => {
             <span><BsGrid3X3 /> ПУБЛИКАЦИИ</span>
 
             <div className="publics">
-              {posts.map((post) => {
-                if (post.username === user.username) {
-                  return (
-                    <img src={post.image}/>
-                  )
-                }
+              {posts.filter((post) => post.username === user.username).map((post) => {
+                return <img src={post.image} />
               })}
             </div>
           </div>
