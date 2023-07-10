@@ -14,7 +14,7 @@
     gap: 100px;
 }
 
-.profile__header img{
+.profile__header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -38,8 +38,8 @@
     gap: 20px;
 }
 
-.header-info__info span{
- font-weight: 500;
+.header-info__info span {
+    font-weight: 500;
 }
 
 .header-info__fullname {
@@ -63,7 +63,7 @@
 .profile__stories-plus {
     width: 80px;
     height: 80px;
-    font-size: 50px;
+    font-size: 45px;
     color: rgb(200, 200, 200);
     background-color: rgb(247, 247, 247);
     border-radius: 50%;
@@ -97,11 +97,88 @@
 
 .publics {
     display: flex;
-    flex-wrap: wrap;
     gap: 6px;
 }
 
 .publics img {
     width: 246px;
     height: 246px;
+}
+
+@media (max-width: 1390px) {
+    .profile {
+        width: 600px;
+        margin-left: 100px;
+    }
+    .publics img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 710px) {
+    .profile {
+        width: 600px;
+        margin-left: 0px;
+    }
+    .profile__header img {
+        width: 110px;
+        height: 110px;
+    }
+    .profile__stories {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .profile__stories-plus {
+        width: 50px;
+        height: 50px;
+        font-size: 35px;
+    }
+    .publics img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 620px) {
+    .profile {
+        width: 500px;
+    }
+    .publics img {
+        width: 165px;
+        height: 165px;
+    }
+}
+
+@media (max-width: 510px) {
+    .profile {
+        width: 400px;
+    }
+    .header-info__info {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        gap: 10px;
+    }
+    .publics img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 410px) {
+    .profile {
+        width: 300px;
+    }
+    .header-info__info {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        gap: 10px;
+    }
+    .publics img {
+        width: 100px;
+        height: 100px;
+    }
 }

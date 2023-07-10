@@ -54,7 +54,7 @@ const Profile = () => {
 
             <div className="publics">
               {posts.filter((post) => post.username === user.username).map((post) => {
-                return <img src={post.image} />
+                return <img key={post.id} src={post.image} />
               })}
             </div>
           </div>
