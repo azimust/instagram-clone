@@ -45,11 +45,13 @@ const Rightbar = () => {
     window.location.reload()
   }
 
-  const { user } = useContext(GlobalContext)
+  const { user, showRightbar } = useContext(GlobalContext)
+  console.log(showRightbar);
 
   return (
-    <div className='rightbar'>
-      <div className="container">
+    <>
+      {!showRightbar ?     <div className='rightbar'>
+      <div div className="container" >
         <div className="rightbar__body">
           <div className="rightbar__header">
             <div className="rightbar__person">
@@ -100,8 +102,9 @@ const Rightbar = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div >
+    </div > : null}
+    </>
   )
 }
 

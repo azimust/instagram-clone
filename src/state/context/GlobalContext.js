@@ -10,7 +10,8 @@ const initialState = {
     isOnnoarded: false,
     isLoading: true,
     isLoading: true,
-    isOpen: false
+    isOpen: false,
+    showRightbar: false
 }
 
 export const GlobalContext = createContext(null)

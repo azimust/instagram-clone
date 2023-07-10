@@ -30,6 +30,12 @@ export const globalReducer = (state, action) => {
                 isOpen: action.payload.isOpen
             }
         }
+        case 'SET_SHOW_RIGHTBAR': {
+            return {
+                ...state,
+                showRightbar: action.payload.showRightbar
+            }
+        }
         default: {
             throw Error('unknown action: ' + action.type)
         }

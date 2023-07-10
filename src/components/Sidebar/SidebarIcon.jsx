@@ -6,13 +6,29 @@ const SidebarIcon = ({ name, icon, url, iconFill, id }) => {
     const dispatch = useContext(GlobalDispatchContext)
 
     const handleClickIcon = (id) => {
-        if (name === 'Создать')
+        if (name === 'Создать') {
             dispatch({
                 type: 'SET_IS_UPLOAD_POST_MODAL_OPEN',
                 payload: {
                     isOpen: true
                 }
             })
+        }
+        if (name === 'Профиль') {
+            dispatch({
+                type: 'SET_SHOW_RIGHTBAR',
+                payload: {
+                    showRightbar: true
+                }
+            })
+        } else {
+            dispatch({
+                type: 'SET_SHOW_RIGHTBAR',
+                payload: {
+                    showRightbar: false
+                }
+            })
+        }
     }
 
     return (
