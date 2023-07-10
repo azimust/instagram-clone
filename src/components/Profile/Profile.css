@@ -1,0 +1,107 @@
+.profile {
+    width: 750px;
+}
+
+.profile__body {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.profile__header {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.profile__header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.profile__header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.header-info__username {
+    font-size: 20px;
+}
+
+.header-info__info {
+    display: flex;
+    font-size: 15px;
+    gap: 20px;
+}
+
+.header-info__info span{
+ font-weight: 500;
+}
+
+.header-info__fullname {
+    font-weight: 500;
+}
+
+.profile__stories {
+    position: relative;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 1px solid rgb(224, 223, 223);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile__stories-plus {
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    color: rgb(200, 200, 200);
+    background-color: rgb(247, 247, 247);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile__stories-title {
+    position: absolute;
+    margin-top: 120px;
+}
+
+.profile__publics {
+    margin-top: 20px;
+    border-top: 1px solid rgb(196, 196, 196);
+}
+
+.profile__publics span {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.publics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.publics img {
+    width: 246px;
+    height: 246px;
+}
