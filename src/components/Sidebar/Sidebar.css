@@ -33,7 +33,8 @@
     color: black;
 }
 
-.bar__icon {
+.bar__icon,
+.bar__icon-fill {
     font-size: 26px;
 }
 
@@ -104,11 +105,28 @@
 }
 
 @media (max-width: 389px) {
-    .bar__icon {
+    .bar__icon,
+    .bar__icon-fill {
         font-size: 20px;
     }
 
     .leave {
         font-size: 20px;
     }
+}
+
+.bar__icon {
+    display: inline;
+}
+
+.bar__icon-fill {
+    display: none;
+}
+
+.bar__item.active .bar__icon {
+    display: none;
+}
+
+.bar__item.active .bar__icon-fill {
+    display: inline;
 }

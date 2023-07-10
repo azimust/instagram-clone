@@ -18,6 +18,7 @@ const SidebarIcon = ({ name, icon, url, iconFill, id }) => {
     return (
         <NavLink to={url} onClick={handleClickIcon} className='bar__item'>
             <span className='bar__icon'>{icon}</span>
+            <span className='bar__icon-fill'>{iconFill}</span>
             <span className='bar__name'>{name}</span>
         </NavLink>
     )
