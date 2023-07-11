@@ -14,6 +14,7 @@ import { toast } from 'react-hot-toast'
 import LoadingOverlay from '../LoadingOverlay/LoadingOverlay'
 import { collection, doc, getDoc, getDocs, query, serverTimestamp, setDoc, where } from 'firebase/firestore'
 import useFetchCurrentUser from '../../utils/fetchCurrentUser'
+import Footer from '../Footer/Footer'
 
 const Auth = () => {
     const [isLoginForm, setIsLoginForm] = useState(false)
@@ -210,26 +211,7 @@ const Auth = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='auth__footer'>
-                        <ul className='auth__info'>
-                            <li>Meta</li>
-                            <li>Информация</li>
-                            <li>Вакансия</li>
-                            <li>Помощь</li>
-                            <li>API</li>
-                            <li>Конфидециальность</li>
-                            <li>Условия</li>
-                            <li>Популярные аккаунты</li>
-                            <li>Места</li>
-                            <li>Instagram Lite</li>
-                            <li>Загрузка контактов и лица, не являющиеся пользователями</li>
-                            <li>Meta Verifield</li>
-                        </ul>
-                        <div>
-                            <span>Русский ᨆ</span>
-                            <span>© 2023 Instagram - Clone by Azimbek</span>
-                        </div>
-                    </div>
+                    <Footer />
                 </div>
             </div>
         </div >
