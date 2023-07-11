@@ -1,10 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import './Sidebar.css'
 import { GoHome, GoHomeFill } from 'react-icons/go'
-import { TfiSearch } from 'react-icons/tfi'
-import { PiVideoLight } from 'react-icons/pi'
-import { LiaFacebookMessenger } from 'react-icons/lia'
-import { AiOutlineHeart, AiOutlineCompass } from 'react-icons/ai'
 import { BsPlusSquare, BsInstagram } from 'react-icons/bs'
 import { BiUserCircle, BiDoorOpen, BiSolidUserCircle } from 'react-icons/bi'
 import SidebarIcon from './SidebarIcon'
@@ -28,48 +24,13 @@ const Sidebar = () => {
         },
         {
             id: 2,
-            icon: <TfiSearch />,
-            url: null,
-            name: 'Поисковый запрос',
-            iconFill: <TfiSearch />
-        },
-        {
-            id: 3,
-            icon: <AiOutlineCompass />,
-            url: null,
-            name: 'Интересное',
-            iconFill: <AiOutlineCompass />,
-        },
-        {
-            id: 4,
-            icon: <PiVideoLight />,
-            url: null,
-            name: 'Reels',
-            iconFill: <PiVideoLight />,
-        },
-        {
-            id: 5,
-            icon: <LiaFacebookMessenger />,
-            url: null,
-            name: 'Сообщение',
-            iconFill: <LiaFacebookMessenger />,
-        },
-        {
-            id: 6,
-            icon: <AiOutlineHeart />,
-            url: null,
-            name: 'Уведомление',
-            iconFill: <AiOutlineHeart />,
-        },
-        {
-            id: 7,
             icon: <BsPlusSquare />,
             url: '/instagram-clone/',
             name: 'Создать',
             iconFill: <BsPlusSquare />,
         },
         {
-            id: 8,
+            id: 3,
             icon: <BiUserCircle />,
             url: `/instagram-clone/${user.username}`,
             name: 'Профиль',
