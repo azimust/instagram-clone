@@ -7,7 +7,7 @@ const Footer = () => {
             <ul className='footer__info'>
                 <li>Meta</li>
                 <li>Информация</li>
-                <li>Вакансия</li>
+                <li>Вакансии</li>
                 <li>Помощь</li>
                 <li>API</li>
                 <li>Конфидециальность</li>

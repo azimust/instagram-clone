@@ -110,6 +110,7 @@
         width: 600px;
         margin-left: 100px;
     }
+
     .publics img {
         width: 200px;
         height: 200px;
@@ -121,23 +122,30 @@
         width: 600px;
         margin-left: 0px;
     }
+
     .profile__header img {
         width: 110px;
         height: 110px;
     }
+
     .profile__stories {
         width: 56px;
         height: 56px;
     }
-    
+
     .profile__stories-plus {
         width: 50px;
         height: 50px;
         font-size: 35px;
     }
+
     .publics img {
         width: 200px;
         height: 200px;
+    }
+
+    .profile .footer {
+        margin-bottom: 80px;
     }
 }
 
@@ -145,6 +153,7 @@
     .profile {
         width: 500px;
     }
+
     .publics img {
         width: 165px;
         height: 165px;
@@ -155,12 +164,14 @@
     .profile {
         width: 400px;
     }
+
     .header-info__info {
         display: flex;
         flex-direction: column;
         font-size: 15px;
         gap: 10px;
     }
+
     .publics img {
         width: 130px;
         height: 130px;
@@ -171,12 +182,14 @@
     .profile {
         width: 300px;
     }
+
     .header-info__info {
         display: flex;
         flex-direction: column;
         font-size: 15px;
         gap: 10px;
     }
+
     .publics img {
         width: 100px;
         height: 100px;

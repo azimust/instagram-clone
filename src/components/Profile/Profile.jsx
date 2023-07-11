@@ -27,7 +27,6 @@ const Profile = () => {
   const publicCount = posts.filter((post) => post.username === user.username)
 
   return (
-    <>
       <div className='profile'>
         <div className="container">
           <div className="profile__body">
@@ -62,9 +61,8 @@ const Profile = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </>
   )
 }
 

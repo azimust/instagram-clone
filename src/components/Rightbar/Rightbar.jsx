@@ -46,64 +46,65 @@ const Rightbar = () => {
   }
 
   const { user, showRightbar } = useContext(GlobalContext)
-  console.log(showRightbar);
 
   return (
     <>
-      {!showRightbar ?     <div className='rightbar'>
-      <div div className="container" >
-        <div className="rightbar__body">
-          <div className="rightbar__header">
-            <div className="rightbar__person">
-              <img src={anon} alt="" />
-              <div className="rightbar__name">
-                <span style={{ fontWeight: '500' }}>{user.username}</span>
-                <span style={{ color: 'gray' }}>{user.fullname}</span>
+      {!showRightbar ?
+        <div className='rightbar'>
+          <div className="container" >
+            <div className="rightbar__body">
+              <div className="rightbar__header">
+                <div className="rightbar__person">
+                  <img src={anon} alt="" />
+                  <div className="rightbar__name">
+                    <span style={{ fontWeight: '500' }}>{user.username}</span>
+                    <span style={{ color: 'gray' }}>{user.fullname}</span>
+                  </div>
+                </div>
+                <span className='blue' onClick={handleLogout}>Переключиться</span>
+              </div>
+              <div className="rightbar__recom">
+                <div className="recom__me">
+                  <span style={{ color: 'gray' }}>Рекомендации для вас</span>
+                  <span style={{ fontSize: '13px' }}>Все</span>
+                </div>
+                <div className="recom__users">
+                  {USERS.map((el, i) => {
+                    return (
+                      <div key={i} className="recom__user">
+                        <img src={el.image} alt="" />
+                        <div className="user__info">
+                          <span style={{ fontWeight: '500' }}>{el.name}</span>
+                          <span style={{ color: 'gray' }} className='sub'>{el.sub}</span>
+                        </div>
+                        <span className='blue'>Подписаться</span>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+              <div className="rightbar__footer">
+                <span>
+                  Информация .
+                  Помощь .
+                  Пресса .
+                  API .
+                  Вакансии .
+                  Конфиденциальность .
+                  Условия .
+                  Места .
+                  Язык .
+                  Meta Verified
+                </span>
+
+                <div>
+                  © 2023 INSTAGRAM - CLONE BY AZIMBEK
+                </div>
               </div>
             </div>
-            <span className='blue' onClick={handleLogout}>Переключиться</span>
-          </div>
-          <div className="rightbar__recom">
-            <div className="recom__me">
-              <span style={{ color: 'gray' }}>Рекомендации для вас</span>
-              <span style={{ fontSize: '13px' }}>Все</span>
-            </div>
-            <div className="recom__users">
-              {USERS.map((el, i) => {
-                return (
-                  <div key={i} className="recom__user">
-                    <img src={el.image} alt="" />
-                    <div className="user__info">
-                      <span style={{ fontWeight: '500' }}>{el.name}</span>
-                      <span style={{ color: 'gray' }} className='sub'>{el.sub}</span>
-                    </div>
-                    <span className='blue'>Подписаться</span>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-          <div className="rightbar__footer">
-            <span>
-              Информация
-              Помощь
-              Пресса
-              API
-              Вакансии
-              Конфиденциальность
-              Условия
-              Места
-              Язык
-              Meta Verified
-            </span>
-
-            <div>
-              © 2023 INSTAGRAM - CLONE BY AZIMBEK
-            </div>
-          </div>
-        </div>
-      </div >
-    </div > : null}
+          </div >
+        </div > : null
+        }
     </>
   )
 }
