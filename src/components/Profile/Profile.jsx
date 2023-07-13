@@ -27,42 +27,42 @@ const Profile = () => {
   const publicCount = posts.filter((post) => post.username === user.username)
 
   return (
-      <div className='profile'>
-        <div className="container">
-          <div className="profile__body">
-            <div className="profile__header">
-              <img src={userImage} alt="" />
-              <div className="profile__header-info">
-                <h3 className="header-info__username">
-                  {user.username}
-                </h3>
-                <div className="header-info__info">
-                  <p><span>{publicCount.length}</span> публикаций</p>
-                  <p><span>0</span> подписчиков</p>
-                  <p><span>0</span> подписок</p>
-                </div>
-                <span className='header-info__fullname'>{user.fullname}</span>
+    <div className='profile'>
+      <div className="container">
+        <div className="profile__body">
+          <div className="profile__header">
+            <img src={userImage} alt="" />
+            <div className="profile__header-info">
+              <h3 className="header-info__username">
+                {user.username}
+              </h3>
+              <div className="header-info__info">
+                <p><span>{publicCount.length}</span> публикаций</p>
+                <p><span>0</span> подписчиков</p>
+                <p><span>0</span> подписок</p>
               </div>
+              <span className='header-info__fullname'>{user.fullname}</span>
             </div>
-            <div className="profile__stories">
-              <div className="profile__stories-plus">
-                <span><BsPlusLg /></span>
-              </div>
-              <span className='profile__stories-title'>Добавить</span>
+          </div>
+          <div className="profile__stories">
+            <div className="profile__stories-plus">
+              <span><BsPlusLg /></span>
             </div>
-            <div className="profile__publics">
-              <span><BsGrid3X3 /> ПУБЛИКАЦИИ</span>
+            <span className='profile__stories-title'>Добавить</span>
+          </div>
+          <div className="profile__publics">
+            <span><BsGrid3X3 /> ПУБЛИКАЦИИ</span>
 
-              <div className="publics">
-                {posts.filter((post) => post.username === user.username).map((post) => {
-                  return <img key={post.id} src={post.image} />
-                })}
-              </div>
+            <div className="publics">
+              {posts.filter((post) => post.username === user.username).map((post) => {
+                return <img key={post.id} src={post.image} />
+              })}
             </div>
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
+    </div>
   )
 }
 

@@ -97,12 +97,12 @@
 
 .publics {
     display: flex;
-    gap: 6px;
+    flex-wrap: wrap;
 }
 
 .publics img {
-    width: 246px;
-    height: 246px;
+    width: 250px;
+    height: 250px;
 }
 
 @media (max-width: 1390px) {
@@ -123,9 +123,9 @@
         margin-left: 0px;
     }
 
-    .profile__header img {
-        width: 110px;
-        height: 110px;
+    .profile__header {
+        display: flex;
+        justify-content: center;
     }
 
     .profile__stories {
@@ -154,9 +154,19 @@
         width: 500px;
     }
 
+    .profile__header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-info__info {
+        display: flex;
+        flex-direction: column;
+    }
+
     .publics img {
-        width: 165px;
-        height: 165px;
+        width: 166px;
+        height: 166px;
     }
 }
 
@@ -165,16 +175,9 @@
         width: 400px;
     }
 
-    .header-info__info {
-        display: flex;
-        flex-direction: column;
-        font-size: 15px;
-        gap: 10px;
-    }
-
     .publics img {
-        width: 130px;
-        height: 130px;
+        width: 133px;
+        height: 133px;
     }
 }
 
