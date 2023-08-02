@@ -8,9 +8,15 @@ import { BsBookmark } from 'react-icons/bs'
 
 const Posts = ({ createdAt, username, image, caption }) => {
   const [isLiked, setIsLiked] = useState(false)
+  const [like, setLike] = useState(0)
 
   const handleLikePost = async () => {
     setIsLiked(!isLiked)
+    if (!isLiked) {
+      setLike(like + 1)
+    } else {
+      setLike(like - 1)
+    }
   }
 
   return (
@@ -35,7 +41,7 @@ const Posts = ({ createdAt, username, image, caption }) => {
         <BsBookmark />
       </div>
       <div className="post__rating">
-        {1} отметка "Нравится"
+        {like} отметка "Нравится"
       </div>
       <div className="post__caption">
         <span style={{ fontWeight: '500' }}>{username}</span> {caption}
