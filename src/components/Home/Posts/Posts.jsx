@@ -41,7 +41,7 @@ const Posts = ({ createdAt, username, image, caption }) => {
         <BsBookmark />
       </div>
       <div className="post__rating">
-        {like} отметка "Нравится"
+        {like} отметок "Нравится"
       </div>
       <div className="post__caption">
         <span style={{ fontWeight: '500' }}>{username}</span> {caption}
