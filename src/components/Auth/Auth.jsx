@@ -166,7 +166,7 @@ const Auth = () => {
                                         id='email'
                                         onChange={onChangeHandler}
                                         value={form.email}
-                                        placeholder='Телефон, имя пользователя или эл.адрес' />
+                                        placeholder='Эл.адрес' />
                                     <input
                                         type='password'
                                         name='password' id='password'
